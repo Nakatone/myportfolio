@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
+
+* {
+    font-family: 'Pridi', serif;
+}
+
+.home-box {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    margin: 1em 0;
+    position: relative;
+    width: 22.5em;
+}
+
+.skills {
+    font-family: 'Pridi', serif;
+}
+
+.skill_type {
+    color: #fff;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: .145em;
+    text-transform: uppercase;
+    width: 5em;
+}
+
+.skill_outer-bar, .skill_inner-bar {
+    height: .75em;
+}
+
+.skill_outer-bar {
+    margin-top: 1em;
+    background-color: #333;
+}
+
+.skill_inner-bar {
+    animation: fillBar 2s forwards;
+    animation-delay: calc(.2s * var(--i));
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill-inner-bar--80 {
+    width: 80%;
+    background: #FF7800;
+}
+.skill-inner-bar--75 {
+    width: 75%;
+    background: #0061FF;
+}
+.skill-inner-bar--30 {
+    width: 30%;
+    background: #FFF700;
+}
+.skill-inner-bar--60 {
+    width: 60%;
+    background: #73D1FF;
+}
+.skill-inner-bar--60PY {
+    width: 60%;
+    background: linear-gradient(90deg, rgba(0,116,255,1) 50%, rgba(255,214,0,1) 50%);
+}
+.skill-inner-bar--90 {
+    width: 90%;
+    background: #00097A;
+}
+
+@keyframes fillBar{
+    to{
+        transform: scaleX(1);
+    }
+}
